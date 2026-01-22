@@ -48,6 +48,7 @@
                                             v-model="record.needScore" 
                                             :min="1" 
                                             :max="10" 
+                                            :step="0.5"
                                             show-input
                                             @change="(val) => handleUpdateScore(record, 'needScore', val)"
                                         />
@@ -68,6 +69,7 @@
                                             v-model="record.meaningScore" 
                                             :min="1" 
                                             :max="10" 
+                                            :step="0.5"
                                             show-input
                                             @change="(val) => handleUpdateScore(record, 'meaningScore', val)"
                                         />

@@ -19,7 +19,6 @@
             </div>
             <div v-else>
                 <div ref="chartRef" class="chart-container"></div>
-                
                 <div class="quadrant-legend" v-if="store.totalItems > 0">
                     <div class="legend-item q1">
                         <span class="dot"></span> 
@@ -87,7 +86,7 @@
                             </div>
                             <a-slider 
                                 v-model="selectedItem.needScore" 
-                                :min="1" :max="10" 
+                                :min="1" :max="10" :step="0.5"
                                 :style="{ width: '100%', marginTop: '10px' }"
                                 @change="val => updateScore(selectedItem.id, 'needScore', val)"
                             />

@@ -12,7 +12,7 @@
       <a-form-item field="needScore" label="需求度">
         <div class="slider-block">
           <span class="slider-label">不需要 (1)</span>
-          <a-slider v-model="form.needScore" :min="1" :max="10" show-input />
+          <a-slider v-model="form.needScore" :min="1" :max="10" :step="0.5" show-input />
           <span class="slider-label">非要不可 (10)</span>
         </div>
       </a-form-item>
@@ -20,7 +20,7 @@
       <a-form-item field="meaningScore" label="意义">
         <div class="slider-block">
           <span class="slider-label">无意义 (1)</span>
-          <a-slider v-model="form.meaningScore" :min="1" :max="10" show-input />
+          <a-slider v-model="form.meaningScore" :min="1" :max="10" :step="0.5" show-input />
           <span class="slider-label">非常有意义 (10)</span>
         </div>
       </a-form-item>
